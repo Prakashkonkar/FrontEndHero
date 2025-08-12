@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<Style>
+    /* 5. Table styles */
+.vaccine-table {
+	width: 100%;
+	border-collapse: collapse;
+	margin-top: var(--spacing);
+}
+
+.vaccine-table th,
+.vaccine-table td {
+	padding: 0.75rem;
+	border: 1px solid #ccc;
+	text-align: left;
+}
+
+.vaccine-table thead {
+	background-color: #e9ecef;
+}
+
+</Style>
+<body>
+    	<!-- table layout  -->
+			<table class="vaccine-table">
+				<thead>
+					<tr>
+						<th>sno</th>
+						<th>categoty</th>
+						<th>price</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>1</td>
+						<td>Special चाय</td>
+						<td>&#8377; 50</td>
+					</tr>
+					<tr>
+						<td>2</td>
+						<td>Special కాఫీ</td>
+						<td>&#8377; 100</td>
+					</tr>
+					<tr>
+						<td>3</td>
+						<td>Kashmiri Breakfast</td>
+						<td>&#8377; 200</td>
+					</tr>
+					<tr>
+						<td colspan="3">Total</td>
+					</tr>
+				</tbody>
+			</table>
+			<!-- table layout end  -->
+</body>
+</html>
