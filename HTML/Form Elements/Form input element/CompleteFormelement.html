@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>ptabs </title>
+		<link rel="stylesheet" href="mystyle.css" />
+	</head>
+    <header class="header"></header>
+<div class="sidebar">
+    <a href="#"> Home</a>
+    <a href="https://google.com"> About</a>
+    <a href="#"> Contact</a>
+	<a href="./form.html"> Forms</a>
+  </div>
+<main class="main-content">
+			<p class="google-link">
+				GOOGLE IT
+				<a href="https://www.google.com" target="_blank" rel="noopener noreferrer" >Search here!</a>
+				<!-- <iframe src="home.html" width="400" height="200"></iframe> -->
+				
+				<!-- 1. href="https://example.com" → Goes to an external site. 
+				 target = blank which opens link in new tab
+				 "_self"	= Opens in the same tab (default) 🪞
+				"_parent" =	Opens in the parent frame (used in frames/iframes) 
+				"_top"  =	Opens in the full window (breaks out of iframes) -->
+			</p>
+
+
+    <!-- form start -->
+			<section class="form-section">
+				<h1>Forms</h1>
+				<form action="https://formsubmit.co/prakash8konkar@gmail.com"  method="POST" enctype="multipart/form-data">
+					<label for="fname">First name:</label>
+					<input type="text" id="fname" name="fname" value="Prakash" readonly />
+
+					<label for="lname">Last name:</label>
+					<input type="text" id="lname" name="lname" value="konkar" required />
+
+					<label for="dob">Date of Birth:</label>
+					<input type="date" name="dob" id="dob" required />
+
+					<label for="email">E-Mail:</label>
+					<input type="email" name="email" id="email" required />
+
+					<label for="attachment">Attachments:</label>
+					<input type="file" name="attachment" id="attachment" />
+
+					<label for="age">Age:</label>
+					<input type="number" name="age" id="age" max="100" required />
+
+					<label for="password">Password:</label>
+					<input type="password" name="password" id="password" pattern="[a-zA-Z0-9!@#$%^&*]{6,16}" />
+
+					<button type="submit" class="btn-submit">Submit</button>
+				</form>
+			</section>
+    <!-- form end -->
+</main>
+</html>
